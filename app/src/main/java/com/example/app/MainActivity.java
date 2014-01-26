@@ -20,7 +20,7 @@ import android.widget.Toast;
 import java.io.LineNumberReader;
 
 public class MainActivity extends ActionBarActivity {
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "Mydebug|MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +52,7 @@ public class MainActivity extends ActionBarActivity {
         super.onPause();
         Log.d(TAG, "onPause() called");
     }
+
 
     @Override
     protected void onStop() {

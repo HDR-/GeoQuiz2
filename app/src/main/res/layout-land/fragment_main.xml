@@ -9,24 +9,25 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.app.MainActivity$PlaceholderFragment">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#888888"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:id="@+id/FrameLayout1">
 
         <TextView
             android:id="@+id/question_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#556655"
+            android:layout_gravity="center_horizontal"
             android:padding="24dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#615c"
+            android:layout_gravity="center_vertical|center_horizontal"
             android:gravity="center">
 
             <Button
@@ -48,14 +49,16 @@
             android:layout_height="wrap_content"
             android:id="@+id/cheat_button"
             android:text="@string/cheat_button"
-            android:background="#448866"/>
+            android:background="#448866"
+            android:layout_gravity="bottom|center"/>
 
         <Button
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next_button"/>
+            android:text="@string/next_button"
+            android:layout_gravity="bottom|right"/>
 
-    </LinearLayout>
+    </FrameLayout>
 
 </RelativeLayout>
