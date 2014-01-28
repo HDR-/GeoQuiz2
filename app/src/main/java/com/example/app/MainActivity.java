@@ -33,6 +33,8 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new MainFragment())
                     .commit();
         }
+
+        getActionBar().setSubtitle("TestSubtitle");
     }
 
     @Override
